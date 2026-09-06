@@ -9,28 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/font-japanese.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/Modules/Piano Keys.css">
     <script src="js/ktane-utils.js"></script>
     <style>
-        @font-face {
-            font-family: 'OpusStd';
-            src: url('font/OpusStd.otf');
-        }
-
-        @font-face {
-            font-family: 'OpusChordsSansStd';
-            src: url('font/OpusChordsSansStd.otf');
-        }
-
-        .music-symbol {
-            font-family: 'OpusStd';
-            font-size: 1.6em;
-            position: relative;
-            top: -0.2em;
-        }
-
         .music-chord {
-            font-family: 'OpusChordsSansStd';
-            font-size: 9pt;
             word-spacing: 0.3em;
         }
         img.music {
@@ -91,83 +73,83 @@
                     <td style="width:25%"><strong><em>変形</em></strong></td>
                 </tr>
                 <tr>
-                    <td><img src="img/Cruel Piano Keys/breve.svg" class="music big"> <strong>と</strong> <span class="music-symbol">T</span></td>
+                    <td><span class="music-symbol"></span> <strong>と</strong> <span class="music-symbol"></span></td>
                     <td>2つ以上のインジケーター(点灯の状態を問わない)</td>
                     <td>シリアルナンバーの最も左の数字</td>
                     <td><strong>RI</strong></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">#</span>あるいは<img src="img/Cruel Piano Keys/double sharp.svg" class="music"></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>空のポートプレート</td>
                     <td>バッテリーホルダーの数</td>
                     <td><strong>P</strong>、x半音下に移調する。xは残り時間の分数である。</td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">U</span>あるいは<img src="img/Cruel Piano Keys/down bow.svg" class="music above"></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>重複しているポート</td>
                     <td>解除したモジュール数の一の位の数</td>
                     <td><strong>I</strong></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">B</span> <strong>と</strong> <img src="img/Cruel Piano Keys/16th rest.svg" class="music"></td>
+                    <td><span class="music-symbol"></span> <strong>と</strong> <span class="music-symbol"></span></td>
                     <td>2つ以上のポートプレート</td>
                     <td>9引く点灯していないインジケーター</td>
                     <td><strong>R</strong></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">C</span>あるいは<span class="music-symbol">c</span></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>シリアルナンバーに一つ以上の母音</td>
                     <td>ミスの回数の一の位の数</td>
                     <td><strong>R</strong>、3半音下に移調する。</td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">n</span>あるいは<span class="music-symbol">m</span></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>偶数個のバッテリー</td>
                     <td>DVI-Dポートが存在する: 7<br>それ以外: 3</td>
                     <td><strong>P</strong>、x半音上に移調する。xはポートの個数<strong><sup>‡</sup></strong>である。</td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">b</span>あるいは<img src="img/Cruel Piano Keys/quarter rest.svg" class="music small"></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>ラベルに母音が含まれないインジケーター</td>
                     <td colspan="2"><div class="music-chord">ソ# ド# レ ド ファ# レ# ラ# ラ シ ソ ミ ファ</div></td>
                 </tr>
                 <tr>
-                    <td><img src="img/Cruel Piano Keys/down bow.svg" class="music above">あるいは<img src="img/Cruel Piano Keys/16th rest.svg" class="music"></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>ポートが2つより少ない</td>
                     <td colspan="2"><div class="music-chord">ソ レ# ファ# ファ ソ# ド# シ ド ラ# ラ ミ レ</div></td>
                 </tr>
                 <tr>
-                    <td><img src="img/Cruel Piano Keys/breve.svg" class="music big">あるいは<img src="img/Cruel Piano Keys/double sharp.svg" class="music"></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td><span class="no-requirement">(追加の条件なし)</span></td>
                     <td colspan="2"><div class="music-chord">ド レ# ファ# レ ファ ド# シ ラ ソ ラ# ミ ソ#</div></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">b</span></td>
+                    <td><span class="music-symbol"></span></td>
                     <td>シリアルナンバーの最後の数字が偶数</td>
                     <td colspan="2"><div class="music-chord">シb シb シb シb ソb ラb シb ラb シb</div>(ファイナルファンタジー)</td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">c</span>あるいは<span class="music-symbol">#</span></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>2個以上のバッテリーホルダー</td>
                     <td colspan="2"><div class="music-chord">ミb ミb レ レ ミb ミb レ ミb ミb レ レ ミ♭</div><div class='song-name'>(ガイルのテーマ)</div></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">n</span> <strong>と</strong> <span class="music-symbol">U</span></td>
+                    <td><span class="music-symbol"></span> <strong>と</strong> <span class="music-symbol"></span></td>
                     <td><span class="no-requirement">(追加の条件なし)</span></td>
                     <td colspan="2"><div class="music-chord">ミ ファ# ファ# ファ# ファ# ミ ミ ミ</div><div class='song-name'>(ジェームズ・ボンドのテーマ)</div></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">C</span>あるいは<span class="music-symbol">T</span></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>	ステレオRCAポートが存在する</td>
                     <td colspan="2"><div class="music-chord">シb ラ シb ファ ミb シb ラ シb ファ ミ</div><div class='song-name'>(ジュラシック・パーク)</div></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">B</span></td>
+                    <td><span class="music-symbol"></span></td>
                     <td>点灯したSNDのインジケーター</td>
                     <td colspan="2"><div class="music-chord">ミ ミ ミ ド ミ ソ ソ</div><div class='song-name'>(スーパーマリオ)</div></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">m</span>あるいは<span class="music-symbol">U</span>あるいは<span class="music-symbol">c</span></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>3個以上のバッテリー</td>
                     <td colspan="2"><div class="music-chord">ド# レ ミ ファ ド# レ ミ ファ シb ラ</div><div class='song-name'>(ピンクパンサー)</div></td>
                 </tr>
@@ -189,17 +171,17 @@
                     </tr>
                 </thead>
                 <tr>
-                    <td><span class="music-symbol">b</span> <strong>と</strong> <span class="music-symbol">#</span></td>
+                    <td><span class="music-symbol"></span> <strong>と</strong> <span class="music-symbol"></span></td>
                     <td><span class="no-requirement">(追加の条件なし)</span></td>
                     <td><div class="music-chord">ソ ソ ド ソ ソ ド ソ ド</div><div class='song-name'>(スーパーマン)</div></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">C</span>あるいは<span class="music-symbol">m</span></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td>シリアルナンバーが3、7、8のいずれかを含む</td>
                     <td><div class="music-chord">ラ ミ ファ ソ ファ ミ レ レ ファ ラ</div><div class='song-name'>(テトリスのテーマA)</div></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">n</span>あるいは<span class="music-symbol">T</span>あるいは<span class="music-symbol">B</span></td>
+                    <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                     <td><span class="no-requirement">(追加の条件なし)</span></td>
                     <td><div class="music-chord">ソ ソ ソ ミb シb ソ ミb シb ソ</div><div class='song-name'>(スター・ウォーズ エピソード5)</div></td>
                 </tr>

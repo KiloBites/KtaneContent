@@ -7,27 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/Modules/Piano Keys.css">
     <script src="js/ktane-utils.js"></script>
     <style>
-        @font-face {
-            font-family: 'OpusStd';
-            src: url('font/OpusStd.otf');
-        }
-
-        @font-face {
-            font-family: 'OpusChordsSansStd';
-            src: url('font/OpusChordsSansStd.otf');
-        }
-
-        .music-symbol {
-            font-family: 'OpusStd';
-            font-size: 1.6em;
-            position: relative;
-            top: -0.2em;
-        }
-
         .music-chord {
-            font-family: 'OpusChordsSansStd';
             word-spacing: 0.3em;
         }
         img.music {
@@ -93,33 +76,33 @@
                 </thead>
                 <tr>
                     <td>0</td>
-                    <td><span class="music-chord">F D F# G# C B A# C# G E D# A</span></td>
+                    <td><span class="music-chord">F D F♯ G♯ C B A♯ C♯ G E D♯ A</span></td>
                     <td>5</td>
-                    <td><span class="music-chord">C D# F# D F C# B A G A# E G#</span></td>
+                    <td><span class="music-chord">C D♯ F♯ D F C♯ B A G A♯ E G♯</span></td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td><span class="music-chord">A# A C E C# D D# G B F# G# F</span></td>
+                    <td><span class="music-chord">A♯ A C E C♯ D D♯ G B F♯ G♯ F</span></td>
                     <td>6</td>
-                    <td><span class="music-chord">G# C A# C# E G B D# A D F F#</span></td>
+                    <td><span class="music-chord">G♯ C A♯ C♯ E G B D♯ A D F F♯</span></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><span class="music-chord">F# B A G# D C G C# F D# E A#</span></td>
+                    <td><span class="music-chord">F♯ B A G♯ D C G C♯ F D♯ E A♯</span></td>
                     <td>7</td>
-                    <td><span class="music-chord">E A C# B G G# A# D# F# F C D</span></td>
+                    <td><span class="music-chord">E A C♯ B G G♯ A♯ D♯ F♯ F C D</span></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td><span class="music-chord">E D# D F# F A# G# C# C B G A</span></td>
+                    <td><span class="music-chord">E D♯ D F♯ F A♯ G♯ C♯ C B G A</span></td>
                     <td>8</td>
-                    <td><span class="music-chord">G# D# D E A# C# F# G F A C B</span></td>
+                    <td><span class="music-chord">G♯ D♯ D E A♯ C♯ F♯ G F A C B</span></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td><span class="music-chord">D E A A# C B C# G# F F# D# G</span></td>
+                    <td><span class="music-chord">D E A A♯ C B C♯ G♯ F F♯ D♯ G</span></td>
                     <td>9</td>
-                    <td><span class="music-chord">D# G# C B D C# F# A# F G A E</span></td>
+                    <td><span class="music-chord">D♯ G♯ C B D C♯ F♯ A♯ F G A E</span></td>
                 </tr>
             </table>
         </div>
@@ -142,56 +125,56 @@
                     </tr>
                 </thead>
                 <tr>
-                    <td><img src="img/Cruel Piano Keys/breve.svg" class="music big"> <strong>y</strong> <span class="music-symbol">T</span></td>
+                    <td><span class="music-symbol"></span> <strong>y</strong> <span class="music-symbol"></span></td>
                     <td>2 o más indicadores (encendidos o no)</td>
                     <td>El número más a la izquierda del número de serie</td>
                     <td><strong>RI</strong></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">#</span> o <img src="img/Cruel Piano Keys/double sharp.svg" class="music"></td>
+                    <td><span class="music-symbol"></span> o <span class="music-symbol"></span></td>
                     <td>Una placa de puertos vacía</td>
                     <td>Número de conectores de batería<strong><sup>*</sup></strong></td>
                     <td><strong>P</strong>, transposición hacia abajo por ‘x’ semitonos, donde ‘x’ = número de minutos restantes</td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">U</span> o <img src="img/Cruel Piano Keys/down bow.svg" class="music above"></td>
+                    <td><span class="music-symbol"></span> o <span class="music-symbol"></span></td>
                     <td>2 o más de un cierto tipo de puerto</td>
                     <td>El dígito menos significativo del número de módulos completados</td>
                     <td><strong>I</strong></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">B</span> <strong>y</strong> <img src="img/Cruel Piano Keys/16th rest.svg" class="music"></td>
+                    <td><span class="music-symbol"></span> <strong>y</strong> <span class="music-symbol"></span></td>
                     <td>2 o más placas de puertos</td>
                     <td>9 menos el número de indicadores apagados<strong><sup>†</sup></strong></td>
                     <td><strong>R</strong></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">C</span> o <span class="music-symbol">c</span></td>
+                    <td><span class="music-symbol"></span> o <span class="music-symbol"></span></td>
                     <td>El número de serie contiene 1 o más vocales</td>
                     <td>El dígito menos significante del número de strikes</td>
                     <td><strong>R</strong>, transposición hacia abajo por 3 semitonos</td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">n</span> o <span class="music-symbol">m</span></td>
+                    <td><span class="music-symbol"></span> o <span class="music-symbol"></span></td>
                     <td>Numero par de baterías</td>
                     <td>Puerto DVI-D presente: 7<br>
 Si no: 3</td>
                     <td><strong>P</strong>, transposición hacia arriba por ‘x’ semitonos, donde ‘x’ = número de puertos<strong><sup>‡</sup></strong></td>
                 </tr>
                 <tr>
-                    <td><span class="music-symbol">b</span> o <img src="img/Cruel Piano Keys/quarter rest.svg" class="music small"></td>
+                    <td><span class="music-symbol"></span> o <span class="music-symbol"></span></td>
                     <td>Un indicador sin vocales en la etiqueta</td>
                     <td>8</td>
                     <td><strong>I</strong></td>
                 </tr>
                 <tr>
-                    <td><img src="img/Cruel Piano Keys/down bow.svg" class="music above"> o <img src="img/Cruel Piano Keys/16th rest.svg" class="music"></td>
+                    <td><span class="music-symbol"></span> o <span class="music-symbol"></span></td>
                     <td>Menos de 2 puertos<strong><sup>‡</sup></strong></td>
                     <td>4</td>
                     <td><strong>R</strong></td>
                 </tr>
                 <tr>
-                    <td><img src="img/Cruel Piano Keys/breve.svg" class="music big"> o <img src="img/Cruel Piano Keys/double sharp.svg" class="music"></td>
+                    <td><span class="music-symbol"></span> o <span class="music-symbol"></span></td>
                     <td><span class="no-requirement">(Sin otros requerimientos)</td>
                     <td>5</td>
                     <td><strong>P</strong></td>

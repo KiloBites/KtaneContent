@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/Modules/Piano Keys.css">
     <script src="js/ktane-utils.js"></script>
-
     <style>
         .page-content * { box-sizing: border-box; }
 
@@ -47,32 +46,18 @@
         }
         .table-ktane .music-symbol > span {
             position: relative;
-            top: -.35em;
             left: .04em;
             display: inline-block;
         }
 
         .table-ktane .music-symbol.sym-low > span {
-            top: .1em;
+            top: .15em;
         }
-
-        .table-ktane .music-symbol img.music {
-            position: relative;
-            top: .1em;
-            margin: 0;
-            vertical-align: baseline;
-        }
-
-        .table-ktane .music-symbol img.music.breve {
-            width: 18px;
-            position: relative;
-            top: -.15em;
-            margin: 0;
-            vertical-align: baseline;
+        .table-ktane .music-symbol.bump > span {
+            top: -0.1em;
         }
 
         .music-chord {
-            font-family: 'OpusChordsSansStd';
             word-spacing: 0.3em;
             white-space: nowrap;
         }
@@ -83,11 +68,6 @@
             line-height: .7em;
             white-space: normal;
         }
-
-        img.music { width: 10px; }
-        img.music.big { width: 18px; }
-        img.music.small { width: 8px; }
-        .dark img.music { filter: invert(85%); }
 
         #rules td[colspan] { border-width: 0px; }
         #rules tr.row-top td { border-top-width: 1px; }
@@ -130,54 +110,54 @@
                         <th class="title-cell notes-col" rowspan="2">Notes</th>
                     </tr>
                     <tr>
-                        <th class="music-symbol"><span>"</span></th>
-                        <th class="music-symbol sym-low"><span>%</span></th>
-                        <th class="music-symbol sym-low"><span>x</span></th>
-                        <th class="music-symbol"><span>m</span></th>
-                        <th class="music-symbol"><span>*</span></th>
-                        <th class="music-symbol"><span>v</span></th>
-                        <th class="music-symbol"><img src="img/Cruel Piano Keys/down bow.svg" class="music big"></th>
-                        <th class="music-symbol"><span>^</span></th>
-                        <th class="music-symbol"><img src="img/Cruel Piano Keys/16th rest.svg" class="music"></th>
-                        <th class="music-symbol"><span>w</span></th>
-                        <th class="music-symbol"><img src="img/Cruel Piano Keys/breve.svg" class="music breve"></th>
-                        <th class="music-symbol"><span>&gt;</span></th>
-                        <th class="music-symbol"><span>B</span></th>
+                        <th class="music-symbol"><span></span></th>
+                        <th class="music-symbol sym-low"><span></span></th>
+                        <th class="music-symbol sym-low"><span></span></th>
+                        <th class="music-symbol"><span></span></th>
+                        <th class="music-symbol"><span></span></th>
+                        <th class="music-symbol bump"><span></span></th>
+                        <th class="music-symbol"><span></span></th>
+                        <th class="music-symbol bump"><span></span></th>
+                        <th class="music-symbol bump"><span></span></th>
+                        <th class="music-symbol bump"><span></span></th>
+                        <th class="music-symbol bump"><span></span></th>
+                        <th class="music-symbol"><span></span></th>
+                        <th class="music-symbol bump"><span></span></th>
                     </tr>
 
                     <!-- 1 -->
                     <tr class="row-top row-bot">
-                        <td class="music-symbol"><span>"</span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="12"></td>
                         <td>evens &gt; odds<br>in S#</td>
                         <td class="notes-col">
-                            <div class="music-chord">Eb F Eb C Ab F Eb</div>
+                            <div class="music-chord">E♭ F E♭ C A♭ F E♭</div>
                             <div class="song-name">(Rudolph the Red-Nosed Reindeer)</div>
                         </td>
                     </tr>
 
-                    <!-- 2 (% or x) -->
+                    <!-- 2 -->
                     <tr class="row-top">
                         <td colspan="1"></td>
-                        <td class="music-symbol sym-low"><span>%</span></td>
+                        <td class="music-symbol sym-low"><span></span></td>
                         <td colspan="11"></td>
                         <td rowspan="2">dup in S#</td>
                         <td rowspan="2" class="notes-col">
-                            <div class="music-chord">C# B A F# G# A G# F#</div>
+                            <div class="music-chord">C♯ B A F♯ G♯ A G♯ F♯</div>
                             <div class="song-name">(We Three Kings)</div>
                         </td>
                     </tr>
                     <tr class="row-bot">
                         <td colspan="2"></td>
-                        <td class="music-symbol sym-low"><span>x</span></td>
+                        <td class="music-symbol sym-low"><span></span></td>
                         <td colspan="10"></td>
                     </tr>
 
-                    <!-- 3 (m and *) -->
+                    <!-- 3 -->
                     <tr class="row-top row-bot">
                         <td colspan="3"></td>
-                        <td class="music-symbol"><span>m</span></td>
-                        <td class="music-symbol"><span>*</span></td>
+                        <td class="music-symbol"><span></span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="8"></td>
                         <td></td>
                         <td class="notes-col">
@@ -186,57 +166,57 @@
                         </td>
                     </tr>
 
-                    <!-- 4 (v or down bow) -->
+                    <!-- 4 -->
                     <tr class="row-top">
                         <td colspan="5"></td>
-                        <td class="music-symbol"><span>v</span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="7"></td>
                         <td rowspan="2">&le;2 PT</td>
                         <td rowspan="2" class="notes-col">
-                            <div class="music-chord">Eb Eb Db Ab Eb Eb F Db</div>
+                            <div class="music-chord">E♭ E♭ D♭ A♭ E♭ E♭ F D♭</div>
                             <div class="song-name">(Last Christmas)</div>
                         </td>
                     </tr>
                     <tr class="row-bot">
                         <td colspan="6"></td>
-                        <td class="music-symbol"><img src="img/Cruel Piano Keys/down bow.svg" class="music big"></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="6"></td>
                     </tr>
 
-                    <!-- 5 (^) -->
+                    <!-- 5 -->
                     <tr class="row-top row-bot">
                         <td colspan="7"></td>
-                        <td class="music-symbol"><span>^</span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="5"></td>
                         <td>lit w/ vowel</td>
                         <td class="notes-col">
-                            <div class="music-chord">B A G Eb D A B A G</div>
+                            <div class="music-chord">B A G E♭ D A B A G</div>
                             <div class="song-name">(All I Want for Christmas is You)</div>
                         </td>
                     </tr>
 
-                    <!-- 6 (16th rest or x) -->
+                    <!-- 6 -->
                     <tr class="row-top">
                         <td colspan="8"></td>
-                        <td class="music-symbol"><img src="img/Cruel Piano Keys/16th rest.svg" class="music"></td>
+                        <td class="music-symbol bump"><span></span></td>
                         <td colspan="4"></td>
                         <td rowspan="2">&ge;3 AA</td>
                         <td rowspan="2" class="notes-col">
-                            <div class="music-chord">F# G A A D B A G E D</div>
+                            <div class="music-chord">F♯ G A A D B A G E D</div>
                             <div class="song-name">(It’s the Most Wonderful Time of the Year)</div>
                         </td>
                     </tr>
                     <tr class="row-bot">
                         <td colspan="2"></td>
-                        <td class="music-symbol sym-low"><span>x</span></td>
+                        <td class="music-symbol sym-low"><span></span></td>
                         <td colspan="10"></td>
                     </tr>
 
-                    <!-- 7 (w and breve) -->
+                    <!-- 7 -->
                     <tr class="row-top row-bot">
                         <td colspan="9"></td>
-                        <td class="music-symbol"><span>w</span></td>
-                        <td class="music-symbol"><img src="img/Cruel Piano Keys/breve.svg" class="music breve"></td>
+                        <td class="music-symbol"><span></span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="2"></td>
                         <td></td>
                         <td class="notes-col">
@@ -245,52 +225,52 @@
                         </td>
                     </tr>
 
-                    <!-- 8 (> or ^ or v) -->
+                    <!-- 8 -->
                     <tr class="row-top">
                         <td colspan="11"></td>
-                        <td class="music-symbol"><span>&gt;</span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="1"></td>
                         <td rowspan="3">1/9 in S#</td>
                         <td rowspan="3" class="notes-col">
-                            <div class="music-chord">G G G G G G G Bb Eb F G</div>
+                            <div class="music-chord">G G G G G G G B♭ E♭ F G</div>
                             <div class="song-name">(Jingle Bells)</div>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="7"></td>
-                        <td class="music-symbol"><span>^</span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="5"></td>
                     </tr>
                     <tr class="row-bot">
                         <td colspan="5"></td>
-                        <td class="music-symbol"><span>v</span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="7"></td>
                     </tr>
 
-                    <!-- 9 (% or B or ") -->
+                    <!-- 9 -->
                     <tr class="row-top">
                         <td colspan="1"></td>
-                        <td class="music-symbol sym-low"><span>%</span></td>
+                        <td class="music-symbol sym-low"><span></span></td>
                         <td colspan="11"></td>
                         <td rowspan="3"></td>
                         <td rowspan="3" class="notes-col">
-                            <div class="music-chord">D D D C# C# C# B C# B F#</div>
+                            <div class="music-chord">D D D C♯ C♯ C♯ B C♯ B F♯</div>
                             <div class="song-name">(Jingle Bell Rock)</div>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="12"></td>
-                        <td class="music-symbol"><span>B</span></td>
+                        <td class="music-symbol bump"><span></span></td>
                     </tr>
                     <tr class="row-bot">
-                        <td class="music-symbol"><span>"</span></td>
+                        <td class="music-symbol"><span></span></td>
                         <td colspan="12"></td>
                     </tr>
 
-                    <!-- 10 (default) -->
+                    <!-- 10 -->
                     <tr class="row-top row-bot">
                         <td colspan="15" class="fullspan">
-                            <div class="music-chord">Bb A Bb G +</div>
+                            <div class="music-chord">B♭ A B♭ G +</div>
                             <div class="song-name">(Carol of the Bells)</div>
                         </td>
                     </tr>
@@ -323,27 +303,27 @@
             <h3>Symbol Reference</h3>
             <table id="symbol-ref" class="table-ktane">
                 <tr>
-                    <th class="music-symbol"><span>"</span></th><td><a href="https://en.wikipedia.org/wiki/Caesura">Caesura</a></td>
+                    <th class="music-symbol"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Caesura">Caesura</a></td>
                     <th class="music-symbol sym-low"><span>%</span></th><td><a href="https://en.wikipedia.org/wiki/Dal_segno">Dal segno</a></td>
-                    <th class="music-symbol sym-low"><span>x</span></th><td><a href="https://en.wikipedia.org/wiki/Sixteenth_note">Sixteenth note</a></td>
+                    <th class="music-symbol sym-low"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Sixteenth_note">Sixteenth note</a></td>
                 </tr>
                 <tr>
-                    <th class="music-symbol"><span>m</span></th><td><a href="https://en.wikipedia.org/wiki/Mordent">Mordent</a></td>
-                    <th class="music-symbol"><span>*</span></th><td><a href="https://en.wikipedia.org/wiki/Sustain_pedal#Specifying_pedaling_in_musical_compositions">Pedal up</a></td>
-                    <th class="music-symbol"><span>v</span></th><td><a href="https://en.wikipedia.org/wiki/Bow_stroke#Up_bow">Up bow</a></td>
+                    <th class="music-symbol"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Mordent">Mordent</a></td>
+                    <th class="music-symbol"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Sustain_pedal#Specifying_pedaling_in_musical_compositions">Pedal up</a></td>
+                    <th class="music-symbol bump"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Bow_stroke#Up_bow">Up bow</a></td>
                 </tr>
                 <tr>
-                    <th class="music-symbol"><img src="img/Cruel Piano Keys/down bow.svg" class="music big"></th><td><a href="https://en.wikipedia.org/wiki/Bow_stroke#Down_bow">Down bow</a></td>
-                    <th class="music-symbol"><span>^</span></th><td><a href="https://en.wikipedia.org/wiki/Marcato">Marcato</a></td>
-                    <th class="music-symbol"><img src="img/Cruel Piano Keys/16th rest.svg" class="music"></th><td><a href="https://en.wikipedia.org/wiki/Sixteenth_note">Sixteenth rest</a></td>
+                    <th class="music-symbol"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Bow_stroke#Down_bow">Down bow</a></td>
+                    <th class="music-symbol bump"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Marcato">Marcato</a></td>
+                    <th class="music-symbol bump"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Sixteenth_note">Sixteenth rest</a></td>
                 </tr>
                 <tr>
-                    <th class="music-symbol"><span>w</span></th><td><a href="https://en.wikipedia.org/wiki/Whole_note">Semibreve</a></td>
-                    <th class="music-symbol"><img src="img/Cruel Piano Keys/breve.svg" class="music breve"></th><td><a href="https://en.wikipedia.org/wiki/Double_whole_note">Breve</a></td>
-                    <th class="music-symbol"><span>&gt;</span></th><td><a href="https://en.wikipedia.org/wiki/Accent_(music)">Accent</a></td>
+                    <th class="music-symbol bump"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Whole_note">Semibreve</a></td>
+                    <th class="music-symbol bump"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Double_whole_note">Breve</a></td>
+                    <th class="music-symbol"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Accent_(music)">Accent</a></td>
                 </tr>
                 <tr>
-                    <th class="music-symbol"><span>B</span></th><td><a href="https://en.wikipedia.org/wiki/Clef#C-clefs" target="_blank">C-clef</a></td>
+                    <th class="music-symbol bump"><span></span></th><td><a href="https://en.wikipedia.org/wiki/Clef#C-clefs" target="_blank">C-clef</a></td>
                     <th colspan="4"></th>
                 </tr>
             </table>

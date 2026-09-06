@@ -8,56 +8,19 @@
     <link rel="stylesheet" type="text/css" href="css/font-japanese.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/Modules/Piano Keys.css">
     <script src="js/ktane-utils.js"></script>
     <style>
-        @font-face {
-            font-family: 'OpusStd';
-            src: url('font/OpusStd.otf');
-        }
-
-        @font-face {
-            font-family: 'OpusChordsSansStd';
-            src: url('font/OpusChordsSansStd.otf');
-        }
-
         .music-symbol {
-            font-family: 'OpusStd';
-            font-size: 1.6em;
-            position: relative;
-            top: -0.2em;
-        }
-
-        .music-symbol-unshifted {
-            font-family: 'OpusStd';
-            font-size: 1.6em;
-            position: relative;
-            top: 0.0em;
-        }
-
-        .music-symbol-shifted {
-            font-family: 'OpusStd';
-            font-size: 1.6em;
-            position: relative;
             top: 0.2em;
+        }
+        .bump {
+            top: -0.2em;
         }
 
         .music-chord {
             font-family: 'Noto Sans JP';
         }
-        img.music {
-            width: 10px;
-            margin-bottom: 5px;
-        }
-        img.music.big {
-            width: 20px;
-        }
-        img.music.small {
-            width: 8px;
-        }
-        img.music.above {
-            margin-bottom: 15px;
-        }
-        .dark img.music { filter: invert(85%); }
 
         .no-requirement {
             font-style: italic;
@@ -91,47 +54,47 @@
                         </tr>
                     </thead>
                     <tr>
-                        <td><span class="music-symbol-unshifted">"</span></td>
+                        <td><span class="music-symbol"></span></td>
                         <td>シリアルナンバーの数字が奇数より偶数の方が多い</td>
                         <td><span class="music-chord">ミ♭ ファ ミ♭ ド ラ♭ ファ ミ♭</span></td>
                     </tr>
                     <tr>
-                        <td><span class="music-symbol-shifted">%</span>あるいは<span class="music-symbol-shifted">x</span></td>
+                        <td><span class="music-symbol"></span>あるいは<span class="music-symbol"></span></td>
                         <td>シリアルナンバーに重複した文字がある</td>
                         <td><span class="music-chord">ド＃ シ ラ ファ＃ ソ＃ ラ ソ＃ ファ＃</span></td>
                     </tr>
                     <tr>
-                        <td><span class="music-symbol">m</span> <strong>と</strong> <span class="music-symbol">*</span></td>
+                        <td><span class="music-symbol bump"></span> <strong>と</strong> <span class="music-symbol"></span></td>
                         <td><span class="no-requirement">(追加の条件なし)</span></td>
                         <td><span class="music-chord">ソ ラ ソ ミ ソ ラ ソ ミ</span></td>
                     </tr>
                     <tr>
-                        <td><span class="music-symbol">v</span>あるいは<img src="img/Cruel Piano Keys/down bow.svg" class="music above"></td>
+                        <td><span class="music-symbol bump"></span>あるいは<span class="music-symbol bump"></span></td>
                         <td>ポートの種類が2種類以下</td>
                         <td><span class="music-chord">ミ♭ ミ♭ レ♭ ラ♭ ミ♭ ミ♭ ファ レ♭</span></td>
                     </tr>
                     <tr>
-                        <td><span class="music-symbol">^</span></td>
+                        <td><span class="music-symbol bump"></span></td>
                         <td>母音が含まれた点灯したインジケーターがある</td>
                         <td><span class="music-chord">シ ラ ソ ミ♭ レ ラ シ ラ ソ</span></td>
                     </tr>
                     <tr>
-                        <td><img src="img/Cruel Piano Keys/16th rest.svg" class="music">あるいは<span class="music-symbol-shifted">x</span></td>
+                        <td><span class="music-symbol bump"></span>あるいは<span class="music-symbol"></span></td>
                         <td>単3バッテリーが3つ以上</td>
                         <td><span class="music-chord">ファ＃ ソ ラ ラ レ シ ラ ソ ミ レ</span></td>
                     </tr>
                     <tr>
-                        <td><span class="music-symbol">w</span> <strong>と</strong> <img src="img/Cruel Piano Keys/breve.svg" class="music big"></td>
+                        <td><span class="music-symbol bump"></span> <strong>と</strong> <span class="music-symbol bump"></span></td>
                         <td><span class="no-requirement">条件なし</span></td>
                         <td><span class="music-chord">ソ ミ ファ ソ ド シ ド レ ド シ ラ ソ</span></td>
                     </tr>
                     <tr>
-                        <td><span class="music-symbol">&gt;</span>あるいは<span class="music-symbol">^</span>あるいは<span class="music-symbol">v</span></td>
+                        <td><span class="music-symbol bump"></span>あるいは<span class="music-symbol bump"></span>あるいは<span class="music-symbol bump"></span></td>
                         <td>シリアルナンバーに1または9が含まれる</td>
                         <td><span class="music-chord">ソ ソ ソ ソ ソ ソ ソ シ♭ ミ♭ ファ ソ</span></td>
                     </tr>
                     <tr>
-                        <td><span class="music-symbol-shifted">%</span>あるいは<span class="music-symbol">B</span>あるいは<span class="music-symbol-unshifted">"</span></td>
+                        <td><span class="music-symbol"></span>あるいは<span class="music-symbol bump"></span>あるいは<span class="music-symbol"></span></td>
                         <td><span class="no-requirement">(追加の条件なし)</span></td>
                         <td><span class="music-chord">レ レ レ ド＃ ド＃ ド＃ シ ド＃ シ ファ＃</span></td>
                     </tr>
