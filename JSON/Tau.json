@@ -1,7 +1,7 @@
 {
   "Author": "Infusion",
   "DefuserDifficulty": "VeryEasy",
-  "Description": "Use 5 letters to get digits in τ to find the order to press the buttons in. Tags: circuit-board, tau, purple-numbers",
+  "Description": "Use 5 letters to get digits in τ to find the order to press the buttons in. Tags: circuit-board, tau, purple-letters",
   "ExpertDifficulty": "Medium",
   "ModuleID": "tauModule",
   "Name": "Tau",
